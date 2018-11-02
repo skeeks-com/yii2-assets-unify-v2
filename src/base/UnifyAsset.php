@@ -5,11 +5,16 @@
  * @license https://cms.skeeks.com/license/
  * @author Semenov Alexander <semenov@skeeks.com>
  */
-namespace skeeks\template\unify;
+
+namespace skeeks\assets\unify\base;
+
 use yii\web\AssetBundle;
+/**
+ * @author Semenov Alexander <semenov@skeeks.com>
+ */
 class UnifyAsset extends AssetBundle
 {
-    public $sourcePath = '@skeeks/assets/unify/template/html/assets/';
+    public $sourcePath = '@skeeks/assets/unify/template/html/';
     /**
      * @param string $asset
      * @return string
