@@ -1,12 +1,13 @@
-[aria-labelledby] {
-  opacity: 0;
+// [aria-labelledby] {
+//   opacity: 0;
 
-  &[role="tabpanel"],
-  &.u-dropdown--css-animation,
-  &.u-dropdown--jquery-slide {
-    opacity: 1;
-  }
-}
+//   &[role="tabpanel"],
+//   &.u-dropdown--css-animation,
+//   &.u-dropdown--jquery-slide,
+//   &.modal.show {
+//     opacity: 1;
+//   }
+// }
 
 tbody[role="tablist"] {
   &:not([data-tabs-mobile-type="slide-up-down"]) {

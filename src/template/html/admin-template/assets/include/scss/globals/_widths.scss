@@ -40,6 +40,10 @@
   .g-width-400--sm {
     width: 400px !important;
   }
+
+  .g-max-width-450--sm {
+    @include px-to-rem(max-width, 450px !important);
+  }
 }
 @media (min-width: $g-md) {
   .g-width-48--md {

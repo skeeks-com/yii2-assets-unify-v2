@@ -1,4 +1,27 @@
 --------------------------------------------------------------------------
+Version v2.6.1 - 18 December, 2018
+--------------------------------------------------------------------------
+Unify v2.6.1 update is focused on vendors (libraries and frameworks) updates, improvements and some minor bug fixes.
+
+- ENHANCED: New Layout Pages were added in Unify Admin Template (included Fixing Sidebar).
+- ENHANCED: MegaMenu "close all" feature was added.
+- UPDATED: Chosen
+- UPDATED: Clipboard
+- UPDATED: Get-size
+- UPDATED: Imagesloaded
+- UPDATED: jQuery
+- UPDATED: Masonry
+- UPDATED: Plyr
+- UPDATED: Popper.js
+- UPDATED: Tooltip.js
+- UPDATED: jQuery.Peity
+- FIXED: Topbar Header in iPad
+- FIXED: Dropdown column in Top Navigation [IE]
+- FIXED: Cubeportfolio "Load More"
+- FIXED: MegaMenu
+- FIXED: and other minor bug fixes.
+
+--------------------------------------------------------------------------
 Version v2.6.0 - 15 August, 2018
 --------------------------------------------------------------------------
 Unify v2.6.0 update is focused on new RTL package for One Pages, E-Commerce and Multi Pages demos (RTL package for Unify Main and Admin Template demos will be added later), new components for Admin Template package, vendors (libraries and frameworks) updates, improvements and some minor bug fixes.

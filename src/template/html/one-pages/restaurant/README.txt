@@ -36,7 +36,7 @@ JavaScrip Assets (Files & Sources)
 ----------------------------------
 html/assets/vendor/jquery/jquery.min.js
 html/assets/vendor/jquery-migrate/jquery-migrate.min.js
-html/assets/vendor/popper.min.js
+html/assets/vendor/popper.js/popper.min.js
 html/assets/vendor/bootstrap/bootstrap.min.js
 html/assets/vendor/master-slider/source/assets/js/masterslider.min.js
 html/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js

@@ -37,7 +37,7 @@ JavaScrip Assets (Files & Sources)
 ----------------------------------
 html/assets/vendor/jquery/jquery.min.js
 html/assets/vendor/jquery-migrate/jquery-migrate.min.js
-html/assets/vendor/popper.min.js
+html/assets/vendor/popper.js/popper.min.js
 html/assets/vendor/bootstrap/bootstrap.min.js
 html/assets/vendor/chosen/chosen.jquery.js
 html/assets/vendor/image-select/src/ImageSelect.jquery.js

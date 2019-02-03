@@ -17367,7 +17367,8 @@ video {
 ------------------------------------*/
 @media (min-width: 992px) {
   [class*="u-dropdown-col-"] {
-    column-gap: 1px;
+    column-gap: 1px; }
+  .hs-sub-menu-opened [class*="u-dropdown-col-"] {
     column-rule: 1px solid #f7f7f7; }
   [class*="u-dropdown-col-"] > * {
     min-width: 200px;
@@ -25426,8 +25427,14 @@ pre[class*="language-"] .toolbar-item a {
 .g-top-10 {
   top: 0.71429rem !important; }
 
+.g-top-12 {
+  top: 0.85714rem !important; }
+
 .g-top-15 {
   top: 1.07143rem; }
+
+.g-top-18 {
+  top: 1.28571rem; }
 
 .g-top-20 {
   top: 1.42857rem; }
@@ -25643,6 +25650,9 @@ pre[class*="language-"] .toolbar-item a {
 
 .g-right-10 {
   right: 0.71429rem !important; }
+
+.g-right-12 {
+  right: 0.85714rem !important; }
 
 .g-right-14 {
   right: 1rem !important; }

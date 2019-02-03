@@ -3598,8 +3598,14 @@
 .g-top-10 {
   top: 0.71429rem !important; }
 
+.g-top-12 {
+  top: 0.85714rem !important; }
+
 .g-top-15 {
   top: 1.07143rem; }
+
+.g-top-18 {
+  top: 1.28571rem; }
 
 .g-top-20 {
   top: 1.42857rem; }
@@ -3815,6 +3821,9 @@
 
 .g-right-10 {
   right: 0.71429rem !important; }
+
+.g-right-12 {
+  right: 0.85714rem !important; }
 
 .g-right-14 {
   right: 1rem !important; }

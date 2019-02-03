@@ -7,7 +7,8 @@
  *
  */
 
-var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '';
+var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '',
+    shouldOpenSidebarOnHover = false;
 
 ;
 (function($) {
@@ -96,12 +97,31 @@ var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '';
 						if (!$(target).hasClass('toggled')) {
 							$self.defaultOpenEffect(target, $closedItems, targetClass, bodyClass, config.afterOpen);
 							$.cookie('isSideMenuMini', true);
+
+							shouldOpenSidebarOnHover = true;
 						} else {
 							$self.defaultCloseEffect(target, $closedItems, targetClass, bodyClass, config.afterClose);
 							$.cookie('isSideMenuMini', '');
+
+							shouldOpenSidebarOnHover = false;
 						}
 					});
 				// }
+
+				if ($('body').hasClass('has-fixed-sidebar')) {
+					$(target).on('mouseenter', function(e) {
+						e.preventDefault();
+						if (shouldOpenSidebarOnHover) {
+							$self.defaultCloseEffect(target, $closedItems, targetClass, bodyClass, config.afterClose);
+						}
+					});
+					$(target).on('mouseleave', function(e) {
+						e.preventDefault();
+						if (shouldOpenSidebarOnHover) {
+							$self.defaultOpenEffect(target, $closedItems, targetClass, bodyClass, config.afterOpen);
+						}
+					});
+				}
 
 				$(target).find('[data-hssm-target]').on('click', function(e) {
 					e.preventDefault();
@@ -138,45 +158,45 @@ var isSideMenuMini = $.cookie('isSideMenuMini') ? true : '';
 					.parent().toggleClass('u-side-nav-opened');
 				});
 
-				if (windW <= 992 || isSideMenuMini == true) {
-					$(this).trigger('click');
-				}
-
-				$(window).on('resize', function() {
-					var windW = $(window).width();
-
-					if (windW <= 992) {
-						$this.removeClass('once-opened');
-
-						if (!$this.hasClass('is-active')) {
-							if (!$this.hasClass('once-closed')) {
-								$this.addClass('is-active was-opened once-closed');
-
-								if (isUnifyEffect) {
-									$self.unifyOpenEffect(target, targetClass, bodyClass);
-								} else {
-									$self.defaultOpenEffect(target, $closedItems, targetClass, bodyClass, config.afterOpen);
-								}
-							}
-						}
-					} else {
-						$this.removeClass('once-closed');
-
-						if ($this.hasClass('was-opened')) {
-							$this.removeClass('is-active was-opened');
-
-							if (!$this.hasClass('once-opened')) {
-								$this.addClass('once-opened');
-
-								if (isUnifyEffect) {
-									$self.unifyCloseEffect(target, targetClass, bodyClass);
-								} else {
-									$self.defaultCloseEffect(target, $closedItems, targetClass, bodyClass, config.afterClose);
-								}
-							}
-						}
-					}
-				});
+				// if (windW <= 992 || isSideMenuMini == true) {
+				// 	$(this).trigger('click');
+				// }
+				//
+				// $(window).on('resize', function() {
+				// 	var windW = $(window).width();
+				//
+				// 	if (windW <= 992) {
+				// 		$this.removeClass('once-opened');
+				//
+				// 		if (!$this.hasClass('is-active')) {
+				// 			if (!$this.hasClass('once-closed')) {
+				// 				$this.addClass('is-active was-opened once-closed');
+				//
+				// 				if (isUnifyEffect) {
+				// 					$self.unifyOpenEffect(target, targetClass, bodyClass);
+				// 				} else {
+				// 					$self.defaultOpenEffect(target, $closedItems, targetClass, bodyClass, config.afterOpen);
+				// 				}
+				// 			}
+				// 		}
+				// 	} else {
+				// 		$this.removeClass('once-closed');
+				//
+				// 		if ($this.hasClass('was-opened')) {
+				// 			$this.removeClass('is-active was-opened');
+				//
+				// 			if (!$this.hasClass('once-opened')) {
+				// 				$this.addClass('once-opened');
+				//
+				// 				if (isUnifyEffect) {
+				// 					$self.unifyCloseEffect(target, targetClass, bodyClass);
+				// 				} else {
+				// 					$self.defaultCloseEffect(target, $closedItems, targetClass, bodyClass, config.afterClose);
+				// 				}
+				// 			}
+				// 		}
+				// 	}
+				// });
 
 				//Actions
 				collection = collection.add($this);

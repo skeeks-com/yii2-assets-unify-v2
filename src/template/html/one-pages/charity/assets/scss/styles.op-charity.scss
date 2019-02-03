@@ -156,3 +156,18 @@ a {
 .u-progress__pointer-v2::after {
   border-color: $g-color-primary transparent;
 }
+
+@media (max-width: $g-lg - 1) {
+  .u-header__section:not(.js-header-change-moment) .navbar-collapse {
+    padding: 0 20px 10px;
+    background-color: $g-color-white;
+
+    .nav-item .nav-link {
+      color: $g-color-gray-dark-v4;
+    }
+
+    .active.nav-item .nav-link {
+      color: $g-color-primary;
+    }
+  }
+}

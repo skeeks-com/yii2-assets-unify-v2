@@ -17294,7 +17294,8 @@ video {
 ------------------------------------*/
 @media (min-width: 992px) {
   [class*="u-dropdown-col-"] {
-    column-gap: 1px;
+    column-gap: 1px; }
+  .hs-sub-menu-opened [class*="u-dropdown-col-"] {
     column-rule: 1px solid #f7f7f7; }
   [class*="u-dropdown-col-"] > * {
     min-width: 200px;

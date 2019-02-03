@@ -274,3 +274,10 @@ h6, .h6 {
     }
   }
 }
+
+@media (max-width: $g-lg - 1) {
+  .u-header__section:not(.js-header-change-moment) .navbar-collapse {
+    padding: 0 20px 10px;
+    background-color: rgba($g-theme-color-black-v1, .8);
+  }
+}

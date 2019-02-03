@@ -15,7 +15,7 @@
       background: none;
       color: inherit;
       border: none;
-      @include px-to-rem(padding, 10px 20px);
+      @include px-to-rem(padding, 7px 20px 8px);
 
       &::after {
         content: "";

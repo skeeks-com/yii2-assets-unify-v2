@@ -83,8 +83,8 @@
 
         <!-- Top Search Bar -->
         <form id="searchMenu" class="u-header--search col-sm g-py-12 g-ml-15--sm g-ml-20--md g-mr-10--sm" aria-labelledby="searchInvoker" action="#!">
-          <div class="input-group g-max-width-450">
-            <input class="form-control form-control-md g-rounded-4" type="text" placeholder="Enter search keywords">
+          <div class="input-group g-max-width-450--sm">
+            <input class="form-control h-100 form-control-md g-rounded-4 g-pr-40" type="text" placeholder="Enter search keywords">
             <button type="submit" class="btn u-btn-outline-primary g-brd-none g-bg-transparent--hover g-pos-abs g-top-0 g-right-0 d-flex g-width-40 h-100 align-items-center justify-content-center g-font-size-18 g-z-index-2"><i class="hs-admin-search"></i>
             </button>
           </div>
@@ -827,16 +827,38 @@
 
             <!-- Layouts Settings: Submenu-1 -->
             <ul id="subMenu2" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0">
-              <!-- Header Static -->
+              <!-- Fixed Header & Sidebar -->
               <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/header-static.html">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/fixed-header-sidebar.html">
                   <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
           <i class="hs-admin-layout-media-center-alt"></i>
         </span>
-                  <span class="media-body align-self-center">Header Static</span>
+                  <span class="media-body align-self-center">Fixed Header & Sidebar</span>
                 </a>
               </li>
-              <!-- End Header Static -->
+              <!-- End Fixed Header & Sidebar -->
+
+              <!-- Fixed Header & Static Sidebar -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/fixed-header-static-sidebar.html">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-center-alt"></i>
+        </span>
+                  <span class="media-body align-self-center">Fixed Header & Static Sidebar</span>
+                </a>
+              </li>
+              <!-- End Fixed Header & Static Sidebar -->
+
+              <!-- Static Header & Sidebar -->
+              <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/static-header-sidebar.html">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-center-alt"></i>
+        </span>
+                  <span class="media-body align-self-center">Static Header & Sidebar</span>
+                </a>
+              </li>
+              <!-- End Static Header & Sidebar -->
 
               <!-- Hide Sidebar -->
               <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
@@ -1155,17 +1177,6 @@
               </li>
               <!-- End Elements -->
 
-              <!-- Layouts -->
-              <!--     <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-      <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="#!">
-        <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
-          <i class="hs-admin-layout-media-overlay"></i>
-        </span>
-        <span class="media-body align-self-center">Layouts</span>
-      </a>
-    </li> -->
-              <!-- End Layouts -->
-
               <!-- Validation -->
               <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--second-level-menu-item">
                 <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu7Validation">
@@ -1400,17 +1411,6 @@
                 </a>
               </li>
               <!-- End Icons -->
-
-              <!-- Buttons -->
-              <!--     <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-      <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../ui-components/ui-buttons.html">
-        <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
-          <i class="hs-admin-view-grid"></i>
-        </span>
-        <span class="media-body align-self-center">Buttons</span>
-      </a>
-    </li> -->
-              <!-- End Buttons -->
             </ul>
             <!-- End UI Components: Submenu -->
           </li>
@@ -1955,7 +1955,7 @@
                       <div class="media-body align-self-center">
                         <h3 class="text-uppercase g-font-size-default g-color-black g-mb-8">Total Income</h3>
 
-                        <div id="rangePickerWrapper3" class="u-datepicker-left u-datepicker--v3 g-pr-10">
+                        <div id="rangePickerWrapper3" class="u-datepicker-left u-datepicker--v3">
                           <input id="rangeDatepicker3" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#rangePickerWrapper3" data-rp-type="range" data-rp-date-format="d M Y" data-rp-default-date='["01 Jan 2016", "31 Dec 2017"]'>
                           <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v3"></i>
                         </div>
@@ -2129,21 +2129,13 @@
             </div>
 
             <div class="col-xl-3">
-
               <!-- Activity Card -->
               <div class="card g-brd-gray-light-v7 g-mb-30">
-                <header class="media g-pa-15 g-pa-25-30-0--md g-mb-16">
-                  <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black g-mr-20 mb-0">Activity</h3>
-
-                  <div class="media-body d-flex justify-content-end">
-                    <div id="rangePickerWrapper" class="u-datepicker-right u-datepicker--v3 g-pr-10">
-                      <input id="rangeDatepicker" class="g-font-size-12 g-font-size-default--md" type="text" data-rp-wrapper="#rangePickerWrapper" data-rp-type="range" data-rp-date-format="d M Y" data-rp-default-date='["01 Jan 2016", "31 Dec 2017"]'>
-                      <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v3"></i>
-                    </div>
-                  </div>
+                <header class="media g-pa-15 g-pa-25-30-0--md">
+                  <h3 class="d-flex align-self-center text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Activity</h3>
                 </header>
 
-                <div class="js-custom-scroll g-height-780 g-pa-15 g-pl-5--md g-pr-30--md g-py-25--md">
+                <div class="js-custom-scroll g-height-780 g-pa-15 g-pl-5--md g-pr-30--md g-py-25--md mCustomScrollbar _mCS_4 mCS-autoHide">
                   <section class="u-timeline-v2-wrap g-pos-rel g-left-25--before g-mb-20">
                     <div class="g-orientation-left g-pos-rel g-ml-25--md g-pl-20">
                       <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
@@ -2163,9 +2155,9 @@
 
                       <p class="g-font-weight-300 g-font-size-default g-mb-16">When you browse through videos at YouTube, which do you usually click first: one with around 10 views or one with around 75,000 views</p>
                       <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
-          <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
-          <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">45 Min <span class="g-hidden-md-down">ago</span></span>
-        </em>
+                      <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
+                      <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">45 Min <span class="g-hidden-md-down">ago</span></span>
+                    </em>
                     </div>
 
                     <hr class="d-flex g-brd-gray-light-v4 g-ml-35--md g-my-20 g-my-30--md">
@@ -2187,14 +2179,14 @@
                       </div>
 
                       <em class="d-flex align-self-center align-items-center g-font-style-normal g-mb-30">
-          <i class="hs-admin-zip g-font-size-24 g-color-secondary"></i>
-          <span class="g-font-weight-300 g-font-size-default g-color-gray-dark-v6 g-ml-12">Project Updates.zip</span>
-        </em>
+                      <i class="hs-admin-zip g-font-size-24 g-color-secondary"></i>
+                      <span class="g-font-weight-300 g-font-size-default g-color-gray-dark-v6 g-ml-12">Project Updates.zip</span>
+                    </em>
 
                       <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
-          <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
-          <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
-        </em>
+                      <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
+                      <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
+                    </em>
                     </div>
 
                     <hr class="d-flex g-brd-gray-light-v4 g-ml-35--md g-my-20 g-my-30--md">
@@ -2217,9 +2209,9 @@
 
                       <p class="g-font-weight-300 g-font-size-default g-mb-16">The collapse of the online-advertising market in 2001 made marketing on the Internet seem even less compelling. Website usability, press releases, online media buys, podcasts, mobile marketing and more – there’s an entire world</p>
                       <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
-          <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
-          <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
-        </em>
+                      <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
+                      <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
+                    </em>
                     </div>
 
                     <hr class="d-flex g-brd-gray-light-v4 g-ml-35--md g-my-20 g-my-30--md">
@@ -2258,9 +2250,9 @@
                         </li>
                       </ul>
                       <em class="d-flex align-self-center align-items-center g-font-style-normal g-color-gray-dark-v6">
-          <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
-          <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
-        </em>
+                      <i class="hs-admin-time g-font-size-default g-font-size-18--md g-color-gray-light-v3"></i>
+                      <span class="g-font-weight-300 g-font-size-12 g-font-size-default--md g-ml-4 g-ml-8--md">10 Min <span class="g-hidden-md-down">ago</span></span>
+                    </em>
                     </div>
 
                     <hr class="d-flex g-brd-gray-light-v4 g-ml-35--md g-my-20 g-my-30--md">
@@ -2273,7 +2265,6 @@
                 </div>
               </div>
               <!-- End Activity Card -->
-
             </div>
           </div>
         </div>
@@ -2346,7 +2337,7 @@
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
 
-  <script src="../../assets/vendor/popper.min.js"></script>
+  <script src="../../assets/vendor/popper.js/popper.min.js"></script>
   <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <script src="../../assets/vendor/cookiejs/jquery.cookie.js"></script>

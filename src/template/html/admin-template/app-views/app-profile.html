@@ -80,8 +80,8 @@
 
           <!-- Top Search Bar -->
           <form id="searchMenu" class="u-header--search col-sm g-py-12 g-ml-15--sm g-ml-20--md g-mr-10--sm" aria-labelledby="searchInvoker" action="#!">
-            <div class="input-group g-max-width-450">
-              <input class="form-control form-control-md g-rounded-4" type="text" placeholder="Enter search keywords">
+            <div class="input-group g-max-width-450--sm">
+              <input class="form-control h-100 form-control-md g-rounded-4 g-pr-40" type="text" placeholder="Enter search keywords">
               <button type="submit" class="btn u-btn-outline-primary g-brd-none g-bg-transparent--hover g-pos-abs g-top-0 g-right-0 d-flex g-width-40 h-100 align-items-center justify-content-center g-font-size-18 g-z-index-2"><i class="hs-admin-search"></i>
               </button>
             </div>
@@ -824,16 +824,38 @@
 
               <!-- Layouts Settings: Submenu-1 -->
               <ul id="subMenu2" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0">
-                <!-- Header Static -->
+                <!-- Fixed Header & Sidebar -->
                 <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/header-static.html">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/fixed-header-sidebar.html">
                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
           <i class="hs-admin-layout-media-center-alt"></i>
         </span>
-                    <span class="media-body align-self-center">Header Static</span>
+                    <span class="media-body align-self-center">Fixed Header & Sidebar</span>
                   </a>
                 </li>
-                <!-- End Header Static -->
+                <!-- End Fixed Header & Sidebar -->
+
+                <!-- Fixed Header & Static Sidebar -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/fixed-header-static-sidebar.html">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-center-alt"></i>
+        </span>
+                    <span class="media-body align-self-center">Fixed Header & Static Sidebar</span>
+                  </a>
+                </li>
+                <!-- End Fixed Header & Static Sidebar -->
+
+                <!-- Static Header & Sidebar -->
+                <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+                  <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../layout-settings/static-header-sidebar.html">
+                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <i class="hs-admin-layout-media-center-alt"></i>
+        </span>
+                    <span class="media-body align-self-center">Static Header & Sidebar</span>
+                  </a>
+                </li>
+                <!-- End Static Header & Sidebar -->
 
                 <!-- Hide Sidebar -->
                 <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
@@ -1152,17 +1174,6 @@
                 </li>
                 <!-- End Elements -->
 
-                <!-- Layouts -->
-                <!--     <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-      <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="#!">
-        <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
-          <i class="hs-admin-layout-media-overlay"></i>
-        </span>
-        <span class="media-body align-self-center">Layouts</span>
-      </a>
-    </li> -->
-                <!-- End Layouts -->
-
                 <!-- Validation -->
                 <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--second-level-menu-item">
                   <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="#!" data-hssm-target="#subMenu7Validation">
@@ -1397,17 +1408,6 @@
                   </a>
                 </li>
                 <!-- End Icons -->
-
-                <!-- Buttons -->
-                <!--     <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-      <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="../ui-components/ui-buttons.html">
-        <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
-          <i class="hs-admin-view-grid"></i>
-        </span>
-        <span class="media-body align-self-center">Buttons</span>
-      </a>
-    </li> -->
-                <!-- End Buttons -->
               </ul>
               <!-- End UI Components: Submenu -->
             </li>
@@ -1696,7 +1696,7 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="firstName" name="firstName" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="Charlie" required="required" data-msg="This field is mandatory"
+                          <input id="firstName" name="firstName" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="Charlie" required="required" data-msg="This field is mandatory"
                           data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
@@ -1712,7 +1712,7 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="lastName" name="lastName" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="Bailey" required="required" data-msg="This field is mandatory"
+                          <input id="lastName" name="lastName" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="Bailey" required="required" data-msg="This field is mandatory"
                           data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
@@ -1748,7 +1748,7 @@
 
                     <div class="row g-mb-20">
                       <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
-                        <label class="mb-0">Birthdate</label>
+                        <label class="mb-0">Birth Date</label>
                       </div>
 
                       <div class="col-md-9 align-self-center">
@@ -1960,7 +1960,7 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="email" name="email" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="email" value="charlie.bailey@example.com" required="required" data-msg="This field is mandatory"
+                          <input id="email" name="email" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="email" value="charlie.bailey@example.com" required="required" data-msg="This field is mandatory"
                           data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
@@ -1976,8 +1976,8 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="confirmEmail" name="confirmEmail" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="email" value="charlie.bailey@example.com" required="required" data-msg="This field is mandatory"
-                          data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
+                          <input id="confirmEmail" name="confirmEmail" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="email" value="charlie.bailey@example.com" required="required"
+                          data-msg="This field is mandatory" data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
                     </div>
@@ -1992,7 +1992,7 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="location" name="location" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="London, UK" required="required" data-msg="This field is mandatory"
+                          <input id="location" name="location" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="text" value="London, UK" required="required" data-msg="This field is mandatory"
                           data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
@@ -2010,7 +2010,7 @@
                               <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                               <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                             </span>
-                              <input id="phone" name="phone" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="tel" value="+44 20 5031 2000" required="required" data-msg="This field is mandatory"
+                              <input id="phone" name="phone" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="tel" value="+44 20 5031 2000" required="required" data-msg="This field is mandatory"
                               data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                             </div>
                           </div>
@@ -2039,7 +2039,7 @@
                               <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                               <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                             </span>
-                              <input id="secondPhone" name="secondPhone" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="tel" required="required" data-msg="This field is mandatory" data-error-class="u-has-error-v3"
+                              <input id="secondPhone" name="secondPhone" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="tel" required="required" data-msg="This field is mandatory" data-error-class="u-has-error-v3"
                               data-success-class="has-success" aria-required="true">
                             </div>
                           </div>
@@ -2139,7 +2139,7 @@
                             <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                             <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                           </span>
-                            <input id="currentPassword" name="currentPassword" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory"
+                            <input id="currentPassword" name="currentPassword" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory"
                             data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                           </div>
 
@@ -2160,8 +2160,8 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="newPassword" name="newPassword" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory" data-error-class="u-has-error-v3"
-                          data-success-class="has-success" aria-required="true">
+                          <input id="newPassword" name="newPassword" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory"
+                          data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
                     </div>
@@ -2176,7 +2176,7 @@
                           <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
                           <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                         </span>
-                          <input id="confirmNewPassword" name="confirmNewPassword" class="form-control form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory"
+                          <input id="confirmNewPassword" name="confirmNewPassword" class="form-control h-100 form-control-md g-brd-gray-light-v7 g-brd-lightblue-v3--focus g-brd-primary--error g-rounded-4 g-px-20 g-py-12" type="password" required="required" data-msg="This field is mandatory"
                           data-error-class="u-has-error-v3" data-success-class="has-success" aria-required="true">
                         </div>
                       </div>
@@ -2263,7 +2263,7 @@
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
 
-  <script src="../../assets/vendor/popper.min.js"></script>
+  <script src="../../assets/vendor/popper.js/popper.min.js"></script>
   <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <script src="../../assets/vendor/cookiejs/jquery.cookie.js"></script>
