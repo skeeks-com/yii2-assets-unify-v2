@@ -8,6 +8,7 @@
 
 namespace skeeks\assets\unify\base;
 
+use yii\web\YiiAsset;
 /**
  *
  * @author Semenov Alexander <semenov@skeeks.com>
@@ -27,5 +28,6 @@ class UnifyRevolutionAsset extends UnifyAsset
     ];
 
     public $depends = [
+        YiiAsset::class
     ];
 }
