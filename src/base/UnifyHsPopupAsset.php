@@ -18,10 +18,11 @@ class UnifyHsPopupAsset extends UnifyAsset
     ];
 
     public $js = [
-        'assets/vendor/hs-megamenu/src/hs.popup.js',
+        'assets/js/components/hs.popup.js',
     ];
 
     public $depends = [
-        UnifyHsCoreAsset::class
+        UnifyHsCoreAsset::class,
+        UnifyFancyboxAsset::class,
     ];
 }
