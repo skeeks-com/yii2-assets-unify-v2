@@ -1,4 +1,20 @@
 --------------------------------------------------------------------------
+Version v2.6.2 - 06 January, 2019
+--------------------------------------------------------------------------
+Unify v2.6.2 update is focused on vendors (libraries and frameworks) updates, improvements and some minor bug fixes.
+
+- UPDATED: Bootstrap v4.2.1
+- UPDATED: Clipboard.js
+- UPDATED: Bootstrap Select
+- UPDATED: jQuery Migrate
+- ENHANCED: hs.range-slider.js
+- FIXED: Plyr on Music One Page
+- FIXED: Equal Height on Login Page 11 & Sign up Page 11
+- FIXED: Dropdown of a top bar on E-commerce Pages
+- FIXED: Custon text inputs & textareas
+- FIXED: and other minor bug fixes.
+
+--------------------------------------------------------------------------
 Version v2.6.1 - 18 December, 2018
 --------------------------------------------------------------------------
 Unify v2.6.1 update is focused on vendors (libraries and frameworks) updates, improvements and some minor bug fixes.

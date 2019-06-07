@@ -27982,6 +27982,10 @@ img.u-block-hover__main--magnifier-top-left {
   height: 100%;
 }
 
+.plyr--full-ui input[type=range] {
+  color: #fe6466;
+}
+
 pre[class*="language-"] {
   position: relative;
   margin: 0;
@@ -33323,8 +33327,16 @@ pre[class*="language-"] .toolbar-item a {
   top: 0.71429rem !important;
 }
 
+.g-top-12 {
+  top: 0.85714rem !important;
+}
+
 .g-top-15 {
   top: 1.07143rem;
+}
+
+.g-top-18 {
+  top: 1.28571rem;
 }
 
 .g-top-20 {
@@ -33609,6 +33621,10 @@ pre[class*="language-"] .toolbar-item a {
 
 .g-right-10 {
   right: 0.71429rem !important;
+}
+
+.g-right-12 {
+  right: 0.85714rem !important;
 }
 
 .g-right-14 {
